@@ -20,6 +20,19 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## RFQ Email Setup
+
+The RFQ form sends inquiries through Gmail SMTP. Create a `.env.local` file using `.env.example` and set:
+
+```bash
+BUSINESS_EMAIL=hello@medassistly.com
+BUSINESS_WHATSAPP=+91 98765 43210
+GMAIL_USER=youraccount@gmail.com
+GMAIL_APP_PASSWORD=your-16-digit-app-password
+```
+
+`GMAIL_APP_PASSWORD` should be a Google App Password generated for an account with 2-Step Verification enabled.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
